@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#09060f" />
+  <title>N0ELzinn</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Unbounded:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="marquee-fix.css" />
+  <link rel="stylesheet" href="experience.css" />
+  <link rel="stylesheet" href="language.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon-noel.svg">
+</head>
+<body>
+  <div class="entry-gate" id="entryGate" role="dialog" aria-label="Enter Noelzin's world">
+    <div class="gate-grid"></div><p data-i18n="gateAbove">ACCESSING THE WORLD OF</p><h1>NOEL</h1><button id="enterSite"><span data-i18n="enter">ENTER EXPERIENCE</span> <b>↗</b></button><small data-i18n="unmute">CLICK TO UNMUTE / 01.09</small>
+  </div>
+  <audio id="siteAudio" preload="auto" loop><source src="audio.mp3" type="audio/mpeg"><source src="audio.wav" type="audio/wav"></audio>
+  <div class="noise"></div><div class="cursor-glow"></div>
+  <div class="cursor-dot"></div><div class="cursor-ring"></div>
+  <main class="page" id="page">
+    <nav class="nav"><a class="brand" href="#home">N0EL<span>zinn</span></a><p>US · BR</p><div class="nav-actions"><select id="languageSwitcher" aria-label="Language selector"><option value="en">EN</option><option value="pt-BR">PT-BR</option><option value="es">ES</option><option value="pt-PT">PT-PT</option><option value="hi">हिंदी</option><option value="ja">日本語</option><option value="zh">中文</option></select><button id="sound" aria-label="Toggle sound"><span data-i18n="soundOff">SOUND OFF</span> <i></i></button></div></nav>
+
+    <section class="hero" id="home">
+      <div class="hero-orbit" aria-hidden="true"><span>N0ELZINN · SOUND · MOTION · N0ELZINN · SOUND · MOTION ·</span></div>
+      <p class="eyebrow reveal" data-i18n="roles">ARTIST · PRODUCER · CREATOR</p>
+      <h1 class="title" aria-label="Noelzin"><span>N</span><span>O</span><span>E</span><span>L</span></h1>
+      <div class="portrait-wrap" id="portrait" aria-label="Noelzin portrait">
+        <div class="portrait-sheet sheet-one"></div><div class="portrait-sheet sheet-two"></div><div class="portrait-sheet sheet-three"></div>
+        <div class="portrait-label">01 / NOELZIN</div>
+      </div>
+      <p class="intro reveal" data-i18n="intro">I make music, ideas, and worlds that cannot fit inside one screen.</p>
+      <div class="hero-status"><span class="live-dot"></span> <span data-i18n="status">NOW EXPLORING / 2026</span></div>
+      <a href="#links" class="scroll magnetic"><span data-i18n="scroll">SCROLL TO EXPLORE</span> <b>↓</b></a>
+    </section>
+
+    <section class="fold-section" id="links">
+      <div class="fold-title"><p data-i18n="find">FIND ME HERE</p><h2><span data-i18n-html="world">STEP INTO<br>MY<br><em>WORLD.</em></span></h2></div>
+      <div class="links">
+        <a href="https://open.spotify.com/intl-pt/artist/03zzOTvsyZVtBSfrFUnDxa" target="_blank" rel="noreferrer" class="link-card"><span>01</span><strong>Spotify</strong><i>↗</i></a>
+        <a href="https://soundcloud.com/noelzinn" target="_blank" rel="noreferrer" class="link-card"><span>02</span><strong>SoundCloud</strong><i>↗</i></a>
+        <a href="https://www.instagram.com/noelzinn_" target="_blank" rel="noreferrer" class="link-card"><span>03</span><strong>Instagram</strong><i>↗</i></a>
+        <a href="https://github.com/PCgamerbom" target="_blank" rel="noreferrer" class="link-card"><span>04</span><strong>GitHub</strong><i>↗</i></a>
+      </div>
+      <div class="paper-corner" aria-hidden="true"></div>
+    </section>
+
+    <section class="signal-section" id="signal">
+      <p class="signal-kicker" data-i18n="transmission">TRANSMISSION_002</p>
+      <div class="signal-copy"><span data-i18n="more">MORE THAN</span><strong id="signalWord">MUSIC.</strong></div>
+      <button class="signal-trigger magnetic" id="changeSignal"><span data-i18n="change">CHANGE THE SIGNAL</span> <i>+</i></button>
+      <div class="signal-coordinates" data-i18n="sleep">DON'T SLEEP</div>
+    </section>
+
+    <section class="marquee" aria-label="N0ELzinn">
+      <div class="marquee-track">
+        <span>HOODTRAP · SEXY DRILL · ATMOSPHERE · N0ELZINN · HOODTRAP · SEXY DRILL · ATMOSPHERE · N0ELZINN · HOODTRAP · SEXY DRILL · ATMOSPHERE · N0ELZINN · </span>
+        <span aria-hidden="true">HOODTRAP · SEXY DRILL · ATMOSPHERE · N0ELZINN · HOODTRAP · SEXY DRILL · ATMOSPHERE · N0ELZINN · HOODTRAP · SEXY DRILL · ATMOSPHERE · N0ELZINN · </span>
+      </div>
+    </section>
+    <footer><p>© 2026 N0ELzinn</p><button id="top"><span data-i18n="top">BACK TO TOP</span> ↑</button><p data-i18n="made">MADE BY NOEL</p></footer>
+  </main>
+  <button class="command-button magnetic" id="commandButton" aria-label="Open navigation">⌘</button>
+  <aside class="command-panel" id="commandPanel" aria-hidden="true">
+    <button class="close-command" id="closeCommand" aria-label="Close navigation">×</button><p data-i18n="quick">QUICK NAVIGATION</p>
+    <a href="#home">01 / <span data-i18n="home">HOME</span> <b>↗</b></a><a href="#links">02 / <span data-i18n="links">LINKS</span> <b>↗</b></a><a href="#signal">03 / <span data-i18n="signal">SIGNAL</span> <b>↗</b></a>
+    <small data-i18n="esc">PRESS ESC TO CLOSE</small>
+  </aside>
+  <script src="script.js"></script>
+  <script src="experience.js"></script>
+  <script src="i18n.js"></script>
+</body>
+</html>

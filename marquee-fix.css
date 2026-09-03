@@ -1,0 +1,10 @@
+/* Esteira infinita: as duas cópias são idênticas e nunca fazem retorno. */
+.marquee .marquee-track{
+  display:flex;
+  width:max-content;
+  will-change:transform;
+  animation:marquee 24s linear infinite;
+}
+.marquee .marquee-track span{display:block}
+
+.portrait-sheet{background-image:linear-gradient(130deg,rgba(255,78,170,.25),transparent 45%),url('https://i.scdn.co/image/ab6761670000ecd445fde64ad603cf6afe45e1be')}
